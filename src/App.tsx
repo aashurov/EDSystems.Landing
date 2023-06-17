@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Pricing from './pages/Pricing';
 import Services from './pages/Services';
+import Contact from './pages/Contact';
+import Getaquote from './pages/Getaquote';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/pricing' element={<Pricing/>}/>
           <Route path='/services' element={<Services/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/getaquote' element={<Getaquote/>}/>
           </Routes>
       </Router>
       {/* <Index/> */}
