@@ -1,0 +1,17 @@
+ ./git.sh
+1. Git init 
+	echo "# aashurov-EDSystems.Landing" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin https://github.com/aashurov/EDSystems.Landing.git
+	git push -u origin main
+	//This line for ssh
+	git push git@github.com:aashurov/EDSystems.Landing.git
+	//if must to relogin to github
+	git remote set-url origin git@github.com:aashurov/EDSystems.Landing.git
+  
+sudo chmod u+x git.sh
+./git.sh
+ 
