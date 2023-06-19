@@ -8,6 +8,8 @@ import Pricing from './pages/Pricing';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Getaquote from './pages/Getaquote';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsCondition from './pages/TermsCondition';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
           <Route path='/services' element={<Services/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/getaquote' element={<Getaquote/>}/>
-          </Routes>
+          <Route path='/privacypolicy' element={<PrivacyPolicy/>}/>
+          <Route path='/termscondition' element={<TermsCondition/>}/>
+        </Routes>
       </Router>
       {/* <Index/> */}
     </div>

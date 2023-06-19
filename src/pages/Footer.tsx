@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-
+import {Link} from 'react-router-dom'
 function Footer(){
     return(
     <Fragment>
@@ -8,12 +8,16 @@ function Footer(){
                     <div className="social-links d-flex mt-4"><a href="https://www.facebook.com/fastdeliverytm/" className="facebook"><i className="bi bi-facebook"></i></a>
                         <a href="https://www.instagram.com/ethno.uz/" className="instagram"><i className="bi bi-instagram"></i></a></div></div>
                 <div className="col-lg-2 col-6 footer-links"><h4>Полезные ссылки</h4>
-                    <ul><li><a href="/" className="active">Главная</a></li>
-                        <li><a href="/about">О компании</a></li>
-                        <li><a href="/pricing">Тарифы</a></li>
-                        <li><a href="/contact">Контакты</a></li>
-                        <li><a href="/termscondition">Условия использования</a></li>
-                        <li><a href="/privacypolicy">Политика конфиденциальности</a></li></ul></div>
+                    <ul>
+                        <li><Link to='/' className="active">Главная</Link></li>
+                        <li><Link to='/about'>О нас</Link></li>
+                        <li><Link to='/pricing'>Тарифы</Link></li>
+                        <li><Link to='/contact'>Контакты</Link></li>
+                        <li><Link to='/getaquote'>Оставить заявку</Link></li>
+                        <li><Link to='/termscondition'>Условия использования</Link></li>
+                        <li><Link to='/privacypolicy'>Политика конфиденциальности</Link></li>
+                    </ul>
+                </div>
                 <div className="col-lg-4 col-md-12 footer-contact text-center text-md-start"><h4>Наши офисы</h4>
                     <p>
                         Российская Федерация, Московская обл, г. Москва,<br/>
