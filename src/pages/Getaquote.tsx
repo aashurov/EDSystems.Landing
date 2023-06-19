@@ -14,8 +14,8 @@ function Getaquote(){
         <div className="container position-relative">
           <div className="row d-flex justify-content-center">
             <div className="col-lg-6 text-center">
-              <h2>Get a Quote</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h2>Оставить заявку</h2>
+              {/* <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p> */}
             </div>
           </div>
         </div>
@@ -23,8 +23,8 @@ function Getaquote(){
       <nav>
         <div className="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Get a Quote</li>
+            <li><a href="index.html">Главная</a></li>
+            <li>Оставить заявку</li>
           </ol>
         </div>
       </nav>
@@ -41,52 +41,51 @@ function Getaquote(){
           
           <div className="col-lg-7">
             <form action="forms/quote.php" method="post" className="php-email-form">
-              <h3>Get a quote</h3>
-              <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
+              <h3>Оставить завку</h3>
+              <p>Для того чтобы оставить, необходимо заполнить все трубуемые поля.</p>
               <div className="row gy-4">
 
                 <div className="col-md-6">
-                  <input type="text" name="departure" className="form-control" placeholder="City of Departure" required/>
+                  <input type="text" name="departure" className="form-control" placeholder="Страна получатея" required/>
                 </div>
 
                 <div className="col-md-6">
-                  <input type="text" name="delivery" className="form-control" placeholder="Delivery City" required/>
+                  <input type="text" name="delivery" className="form-control" placeholder="Город получателя" required/>
                 </div>
 
                 <div className="col-md-6">
-                  <input type="text" name="weight" className="form-control" placeholder="Total Weight (kg)" required/>
+                  <input type="text" name="weight" className="form-control" placeholder="Все посылки (kг)" required/>
                 </div>
 
                 <div className="col-md-6">
-                  <input type="text" name="dimensions" className="form-control" placeholder="Dimensions (cm)" required/>
+                  <input type="text" name="dimensions" className="form-control" placeholder="Объем (cm)" required/>
                 </div>
 
                 <div className="col-lg-12">
-                  <h4>Your Personal Details</h4>
+                  <h4>Дополнительные данные</h4>
                 </div>
 
                 <div className="col-md-12">
-                  <input type="text" name="name" className="form-control" placeholder="Name" required/>
+                  <input type="text" name="name" className="form-control" placeholder="Имя Фамилия" required/>
                 </div>
 
-                <div className="col-md-12 ">
+                {/* <div className="col-md-12 ">
                   <input type="email" className="form-control" name="email" placeholder="Email" required/>
-                </div>
+                </div> */}
 
                 <div className="col-md-12">
-                  <input type="text" className="form-control" name="phone" placeholder="Phone" required/>
+                  <input type="text" className="form-control" name="phone" placeholder="Контакты" required/>
                 </div>
 
-                <div className="col-md-12">
+                {/* <div className="col-md-12">
                   <textarea className="form-control" name="message" rows={6} placeholder="Message" required></textarea>
-                </div>
+                </div> */}
 
                 <div className="col-md-12 text-center">
-                  <div className="loading">Loading</div>
+                  <div className="loading">Загрузка</div>
                   <div className="error-message"></div>
-                  <div className="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                  <button type="submit">Get a quote</button>
+                  <div className="sent-message">Ваш запрос цитаты был успешно отправлен. Спасибо!</div>
+                  <button type="submit">Оставить заявку</button>
                 </div>
 
               </div>
