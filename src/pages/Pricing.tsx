@@ -31,29 +31,367 @@ function Pricing(){
     </div>
     {/* <!-- End Breadcrumbs --> */}
 
-    <section id="pricing" className="pricing"><div className="container aos-init aos-animate" data-aos="fade-up"><div className="row gy-4"><div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"><div className="pricing-item"><h3>Стандарт</h3>
-                            <h4><sup>$</sup>7<span> / кг</span></h4>
-                            <ul><li><i className="bi bi-check"></i> 5-7 рабочих дней</li>
-                                <li><i className="bi bi-check"></i> Минимальный вес 1 кг </li></ul>
-                            <a href="#" className="buy-btn">Заказать</a></div></div>
+    
+         <section id="pricing" className="pricing">
+            <div className="container" data-aos="fade-up">
 
-                    <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><div className="pricing-item featured"><h3>Экспрес</h3>
-                            <h4><sup>$</sup>12<span> / кг</span></h4>
-                            <ul><li><i className="bi bi-check"></i> 3-5 рабочих дней</li>
-                                <li><i className="bi bi-check"></i> Минимальный вес 1 кг </li></ul>
-                            <a href="#" className="buy-btn">Заказать</a></div></div>
+                <div className="table-responsive-smrow gy-4 ">
 
-                    <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"><div className="pricing-item"><h3>Ультра</h3>
-                            <h4><sup>$</sup>30<span> / кг</span></h4>
-                            <ul><li><i className="bi bi-check"></i> 36 часов</li>
-                                <li><i className="bi bi-check"></i> Минимальный вес 2 кг </li></ul>
-                            <a href="#" className="buy-btn">Заказать</a></div></div>
+                    <table className="table text-center">
+                        <thead>
+                            <tr>
+                                <th colSpan={6} className="align-middle">Отправки из Российской Федерации</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowSpan={2} className="align-middle">Откуда</td>
+                                <td rowSpan={2} className="align-middle">Куда</td>
+                                <td colSpan={4} className="align-middle">Тарифы и сроки</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle, center">СТАНДАРТ<br/>3-5 рабочих дней<br/>(по паспорту получателя)</td>
+                                <td className="align-middle">ЭКСПРЕСС<br/>2-4 рабочих дней</td>
+                                <td className="align-middle">УЛЬТРА<br/>36 часов<br/>(мин вес 1кг)</td>
+                                <td className="align-middle">АВТО<br/>от 10 рабочих дней<br/>мин вес от 10кг</td>
+                            </tr>
+                            <tr>
+                                <td rowSpan={5} className="align-middle">Москва</td>
+                                <td className="align-middle bold">Ташкент</td>
+                                <td className="align-middle">$7/кг <br/>рейс в среду и субботу</td>
+                                <td className="align-middle">$12/кг <br/>рейс 3-4 раза в неделю</td>
+                                <td className="align-middle">$30/кг <br/>рейс 3-4 раза в неделю </td>
+                                <td className="align-middle">от $5/кг<br/>рейс 2-3 раза в неделю</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Душанбе</td>
+                                <td className="align-middle">$8/кг</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$2/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Бишкек</td>
+                                <td className="align-middle">$6/кг <br/>(первый кг $12)</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$3/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Алматы</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$4/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Стамбул</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"><div className="pricing-item"><h3>Авто</h3>
-                            <h4><sup>$</sup>5<span> / кг</span></h4>
-                            <ul><li><i className="bi bi-check"></i> от 10 рабочих дней</li>
-                                <li><i className="bi bi-check"></i> Минимальный вес 10 кг </li></ul>
-                            <a href="#" className="buy-btn">Заказать</a></div></div></div></div></section>
+                    <br/>
+
+
+                    <table className="table text-center">
+                        <thead>
+                            <tr>
+                                <th colSpan={6} className="align-middle">Отправки из Республики Узбекистан</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowSpan={2} className="align-middle">Откуда</td>
+                                <td rowSpan={2} className="align-middle">Куда</td>
+                                <td colSpan={4} className="align-middle">Тарифы и сроки</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">СТАНДАРТ<br/>5-7 рабочих дней<br/>(по паспорту получателя)</td>
+                                <td className="align-middle">ЭКСПРЕСС<br/>3-5 рабочих дней</td>
+                                <td className="align-middle">УЛЬТРА<br/>36 часов</td>
+                                <td className="align-middle">АВТО<br/>от 10 рабочих дней<br/>мин вес от 10кг</td>
+                            </tr>
+                            <tr>
+                                <td rowSpan={5} className="align-middle">Ташкент</td>
+                                <td className="align-middle">Москва</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$12/кг</td>
+                                <td className="align-middle">$30/кг </td>
+                                <td className="align-middle">$7/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Душанбе</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Бишкек</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$8/кг <br/>(первый кг $15)</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$5/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Алматы</td>
+                                <td className="align-middle"></td>
+                                <td className="align-middle">$8/кг <br/>(первый кг $15)</td>
+                                <td className="align-middle">$30/кг</td>
+                                <td className="align-middle">$5/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Стамбул</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">от $8/кг<br/>(мин вес к отправке 2кг)</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br/>
+
+                    <table className="table text-center">
+                        <thead>
+                            <tr>
+                                <th colSpan={6} className="align-middle">Отправки из Респубики Кыргызстан</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowSpan={2} className="align-middle">Откуда</td>
+                                <td rowSpan={2} className="align-middle">Куда</td>
+                                <td colSpan={4} className="align-middle">Тарифы и сроки</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">СТАНДАРТ<br/>5-7 рабочих дней<br/>(по паспорту получателя)</td>
+                                <td className="align-middle">ЭКСПРЕСС<br/>3-5 рабочих дней<br/></td>
+                                <td className="align-middle">УЛЬТРА<br/>36 часов</td>
+                                <td className="align-middle">АВТО<br/>от 10 рабочих дней<br/>мин вес от 10кг</td>
+                            </tr>
+                            <tr>
+                                <td rowSpan={5} className="align-middle">Бишкек</td>
+                                <td className="align-middle">Москва</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$6/кг <br/>(первый кг $12)</td>
+                                <td className="align-middle">$30/кг </td>
+                                <td className="align-middle">$3/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Ташкент</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$8/кг <br/>(первый кг $15)</td>
+                                <td className="align-middle">$30/кг</td>
+                                <td className="align-middle">$5/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Алматы</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$5/кг <br/>(первый кг $10)</td>
+                                <td className="align-middle">$30/кг</td>
+                                <td className="align-middle">$3/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Стамбул</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$8/кг <br/>(первый кг $15)</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Душанбе</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br/>
+
+                    <table className="table text-center">
+                        <thead>
+                            <tr>
+                                <th colSpan={6} className="align-middle">Отправки из Респубики Казахстан</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowSpan={2} className="align-middle">Откуда</td>
+                                <td rowSpan={2} className="align-middle">Куда</td>
+                                <td colSpan={4} className="align-middle">Тарифы и сроки</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">СТАНДАРТ<br/>5-7 рабочих дней<br/>(по паспорту получателя)</td>
+                                <td className="align-middle">ЭКСПРЕСС<br/>3-5 рабочих дней<br/></td>
+                                <td className="align-middle">УЛЬТРА<br/>36 часов</td>
+                                <td className="align-middle">АВТО<br/>от 10 рабочих дней<br/>мин вес от 10кг</td>
+                            </tr>
+                            <tr>
+                                <td rowSpan={5} className="align-middle">Алматы</td>
+                                <td className="align-middle">Ташкент</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$8/кг <br/>(первый кг $15)</td>
+                                <td className="align-middle">$30/кг </td>
+                                <td className="align-middle">от $5/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Бишкек</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$5/кг <br/>(первый кг $10)</td>
+                                <td className="align-middle">$30/кг</td>
+                                <td className="align-middle">$3/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Москва</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$4/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Стамбул</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Душанбе</td>
+                                <td className="align-middle"></td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br/>
+
+                    <table className="table text-center">
+                        <thead>
+                            <tr>
+                                <th colSpan={6} className="align-middle">Отправки из Респубики Таджикистан</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowSpan={2} className="align-middle">Откуда</td>
+                                <td rowSpan={2} className="align-middle">Куда</td>
+                                <td colSpan={4} className="align-middle">Тарифы и сроки</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">СТАНДАРТ<br/>5-7 рабочих дней<br/>(по паспорту получателя)</td>
+                                <td className="align-middle">ЭКСПРЕСС<br/>3-5 рабочих дней<br/></td>
+                                <td className="align-middle">УЛЬТРА<br/>36 часов</td>
+                                <td className="align-middle">АВТО<br/>от 10 рабочих дней<br/>мин вес от 10кг</td>
+                            </tr>
+                            <tr>
+                                <td rowSpan={5} className="align-middle">Душанбе</td>
+                                <td className="align-middle">Москва</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$10/кг <br/>(мин вес к отправке 2кг)</td>
+                                <td className="align-middle">$30/кг<br/>(мин вес к отправке 1кг)</td>
+                                <td className="align-middle">$3/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Ташкент</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Бишкек</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Стамбул</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Алматы</td>
+                                <td className="align-middle"></td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br/>
+                    <table className="table text-center">
+                        <thead>
+                            <tr>
+                                <th colSpan={6} className="align-middle">Отправки из Турции</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowSpan={2} className="align-middle">Откуда</td>
+                                <td rowSpan={2} className="align-middle">Куда</td>
+                                <td colSpan={4} className="align-middle">Тарифы и сроки</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">СТАНДАРТ<br/>5-7 рабочих дней<br/>(по паспорту получателя)</td>
+                                <td className="align-middle">ЭКСПРЕСС<br/>3-5 рабочих дней<br/></td>
+                                <td className="align-middle">УЛЬТРА<br/>36 часов</td>
+                                <td className="align-middle">АВТО<br/>от 25 рабочих дней<br/>мин вес от 10кг</td>
+                            </tr>
+                            <tr>
+                                <td rowSpan={5} className="align-middle">Стамбул</td>
+                                <td className="align-middle">Ташкент</td>
+                                <td className="align-middle">от $5,5/кг<br/>(мин вес к отправке 2кг)</td>
+                                <td className="align-middle">от $9/кг<br/></td>
+                                <td className="align-middle">$30/кг<br/>(мин вес к отправке 1кг)</td>
+                                <td className="align-middle">от $5/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Москва</td>
+                                <td className="align-middle">$9/кг<br/>(мин вес к отправке 5кг)</td>
+                                <td className="align-middle">$12/кг<br/>(мин вес к отправке 2кг)</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$5/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Бишкек</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$6/кг<br/>(мин вес к отправке 2кг)</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$4/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Алматы</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$7/кг<br/>(мин вес к отправке 2кг)</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">$4/кг</td>
+                            </tr>
+                            <tr>
+                                <td className="align-middle">Душанбе</td>
+                                <td className="align-middle"></td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                                <td className="align-middle">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section> 
 
   </div>
   {/* <!-- End #main --> */}
