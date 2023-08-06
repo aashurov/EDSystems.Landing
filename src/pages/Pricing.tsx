@@ -87,8 +87,8 @@ function Pricing(){
                            <tr>
                                <td className="align-middle">Стамбул</td>
                                <td className="align-middle">-</td>
-                               <td className="align-middle">-</td>
                                <td className="align-middle">$14/кг <br/>(мин вес к отправке 2кг)</td>
+                               <td className="align-middle">-</td>
                                <td className="align-middle">-</td>
                            </tr>
                            </tbody>
