@@ -37,7 +37,7 @@ function Index(){
 
           <div className="col-lg-3 col-6">
             <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="clients"data-purecounter-end="232" data-purecounter-duration="1" ></span>
+              <span data-purecounter-start="0" id="clients"data-purecounter-end="232" data-purecounter-duration="1" >12782</span>
               <p>Клиенты</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ function Index(){
 
           <div className="col-lg-3 col-6">
             <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="projects" data-purecounter-end="521" data-purecounter-duration="1" ></span>
+              <span data-purecounter-start="0" id="projects" data-purecounter-end="521" data-purecounter-duration="1" >80349</span>
               <p>Доставлено</p>
             </div>
           </div>
@@ -53,7 +53,7 @@ function Index(){
 
           <div className="col-lg-3 col-6">
             <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="support" data-purecounter-end="1453" data-purecounter-duration="1" ></span>
+              <span data-purecounter-start="0" id="support" data-purecounter-end="1453" data-purecounter-duration="1" >186</span>
               <p>В пути</p>
             </div>
           </div>
@@ -61,7 +61,7 @@ function Index(){
 
           <div className="col-lg-3 col-6">
             <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="workers" data-purecounter-end="32" data-purecounter-duration="1" ></span>
+              <span data-purecounter-start="0" id="workers" data-purecounter-end="32" data-purecounter-duration="1" >28896</span>
               <p>Всего</p>
             </div>
           </div>
