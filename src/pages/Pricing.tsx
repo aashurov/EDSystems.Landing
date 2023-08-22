@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Footer from "./Footer";
 import Menu from "./Menu";
+import {Link} from "react-router-dom";
 
 function Pricing(){
     return(
@@ -23,7 +24,7 @@ function Pricing(){
       <nav>
         <div className="container">
           <ol>
-            <li><a href="index.html">Главная</a></li>
+            <li><Link to='/' className="active">Главная</Link></li>
             <li>Тарифы</li>
           </ol>
         </div>

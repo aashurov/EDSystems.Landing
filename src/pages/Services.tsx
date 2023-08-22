@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Footer from "./Footer";
 import Menu from "./Menu";
+import {Link} from "react-router-dom";
 
 function Service(){
     return(
@@ -23,8 +24,8 @@ function Service(){
   <nav>
     <div className="container">
       <ol>
-        <li><a href="index.html">Home</a></li>
-        <li>Services</li>
+        <li><Link to='/' className="active">Главная</Link></li>
+        <li>Услуги</li>
       </ol>
     </div>
   </nav>

@@ -20,6 +20,7 @@ function Menu() {
 
                             <li><Link to='/about'>О нас</Link></li>
                             {/* <li><Link to='/services'>Услуги</Link></li> */}
+                             <li><Link to='/news'>Новости</Link></li>
                             <li><Link to='/pricing'>Тарифы</Link></li>
                             <li><Link to='/contact'>Контакты</Link></li>
                             <li><Link to='/getaquote'>Оставить заявку</Link></li>
