@@ -131,11 +131,11 @@ function Index(){
     <div className="container" data-aos="fade-up">
 
       <div className="row gy-4">
-        <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
-          <img src="assets/img/about.jpg" className="img-fluid" alt=""/>
-          <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></a>
-        </div>
-        <div className="col-lg-6 content order-last  order-lg-first">
+        {/*<div className="col-lg-6 position-relative align-self-start order-lg-last order-first">*/}
+        {/*  <img src="assets/img/about.jpg" className="img-fluid" alt=""/>*/}
+        {/*  <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></a>*/}
+        {/*</div>*/}
+        <div className="col-lg-12 content order-last  order-lg-first">
           <h3>О компании</h3>
           <p>
           Наша компания это сплоченный коллектив высококвалифицированных специалистов разного профиля, персональный подход к каждому клиенту и безукоризненная деловая репутация. Уровень наших услуг по доставке посылок всегда на высоте, что помогает нам организовывать и выполнять даже самые трудные работы. Мы давно и успешно занимаемся перевозками, но эта сфера деятельности не ограничивается экспедированием. Транспортировка товаров может включать в себя складское хранение, разработку предстоящих маршрутов, таможенное оформление и многое другое.

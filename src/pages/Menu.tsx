@@ -18,7 +18,7 @@ function Menu() {
                             </li>
                             {/* _b30f320f9cf3e22ad5c70610bb3fd444.ethno.uz. CNAME _e9cb7e7b36783da9c5c52a343ddb1fb7.wmqxbylrnj.acm-validations.aws. */}
 
-                            <li><Link to='/about'>О нас</Link></li>
+                            {/*<li><Link to='/about'>О нас</Link></li>*/}
                             {/* <li><Link to='/services'>Услуги</Link></li> */}
                              <li><Link to='/news'>Новости</Link></li>
                             <li><Link to='/pricing'>Тарифы</Link></li>
