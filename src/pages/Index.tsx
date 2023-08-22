@@ -7,7 +7,6 @@ function Index(){
     return(
     <Fragment>
        <div>
-
        <Menu/>
 
 {/* <!-- ======= Hero Section ======= --> */}
@@ -16,12 +15,12 @@ function Index(){
     <div className="row gy-4 d-flex justify-content-between">
       <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
         <h2 data-aos="fade-up">Ваш молниеносный партнер по доставке</h2>
-        <p data-aos="fade-up" data-aos-delay="100">Организуем перевозку от начала до конца: получаем разрешения, оформляем документы, предоставляем сопровождение и страхование, осуществляем погрузку и разгрузку</p>
+        <p data-aos="fade-up" data-aos-delay="100" style={{fontSize: "18px"}}>Доставка документов, образцов и посылок из Узбекистана в стран СНГ и обратно от 3 дней.<br/> Организуем перевозку от начала до конца: получаем разрешения, оформляем документы, предоставляем сопровождение и страхование, осуществляем погрузку и разгрузку.</p>
 
-        <form action="" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-          <input type="text" id="submit-text" className="form-control" placeholder="Номер посылки"/>
-          <button type="submit" id="submit-button" className="btn btn-primary">Поиск</button>
-        </form>
+        {/*<form action="" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">*/}
+        {/*  <input type="text" id="submit-text" className="form-control" placeholder="Номер посылки"/>*/}
+        {/*  <button type="submit" id="submit-button" className="btn btn-primary">Поиск</button>*/}
+        {/*</form>*/}
 
         {/* <div id="table" className="for-information-table bg-white">
            <div className="row text-danger p-2">
@@ -33,46 +32,47 @@ function Index(){
            </div>
         </div> */}
 
-        <div className="row gy-4" data-aos="fade-up" data-aos-delay="400">
+        {/*<div className="row gy-4" data-aos="fade-up" data-aos-delay="400">*/}
 
-          <div className="col-lg-3 col-6">
-            <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="clients"data-purecounter-end="232" data-purecounter-duration="1" >12782</span>
-              <p>Клиенты</p>
-            </div>
-          </div>
-          {/* <!-- End Stats Item --> */}
+        {/*  <div className="col-lg-3 col-6">*/}
+        {/*    <div className="stats-item text-center w-100 h-100">*/}
+        {/*      <span data-purecounter-start="0" id="clients"data-purecounter-end="232" data-purecounter-duration="1" >12782</span>*/}
+        {/*      <p>Клиенты</p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*  /!* <!-- End Stats Item --> *!/*/}
 
-          <div className="col-lg-3 col-6">
-            <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="projects" data-purecounter-end="521" data-purecounter-duration="1" >80349</span>
-              <p>Доставлено</p>
-            </div>
-          </div>
-          {/* <!-- End Stats Item --> */}
+        {/*  <div className="col-lg-3 col-6">*/}
+        {/*    <div className="stats-item text-center w-100 h-100">*/}
+        {/*      <span data-purecounter-start="0" id="projects" data-purecounter-end="521" data-purecounter-duration="1" >80349</span>*/}
+        {/*      <p>Доставлено</p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*  /!* <!-- End Stats Item --> *!/*/}
 
-          <div className="col-lg-3 col-6">
-            <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="support" data-purecounter-end="1453" data-purecounter-duration="1" >186</span>
-              <p>В пути</p>
-            </div>
-          </div>
-          {/* <!-- End Stats Item --> */}
+        {/*  <div className="col-lg-3 col-6">*/}
+        {/*    <div className="stats-item text-center w-100 h-100">*/}
+        {/*      <span data-purecounter-start="0" id="support" data-purecounter-end="1453" data-purecounter-duration="1" >186</span>*/}
+        {/*      <p>В пути</p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*  /!* <!-- End Stats Item --> *!/*/}
 
-          <div className="col-lg-3 col-6">
-            <div className="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" id="workers" data-purecounter-end="32" data-purecounter-duration="1" >28896</span>
-              <p>Всего</p>
-            </div>
-          </div>
-          {/* <!-- End Stats Item --> */}
+        {/*  <div className="col-lg-3 col-6">*/}
+        {/*    <div className="stats-item text-center w-100 h-100">*/}
+        {/*      <span data-purecounter-start="0" id="workers" data-purecounter-end="32" data-purecounter-duration="1" >28896</span>*/}
+        {/*      <p>Всего</p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*  /!* <!-- End Stats Item --> *!/*/}
 
-        </div>
+        {/*</div>*/}
+
       </div>
 
-      <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-        <img src="assets/img/hero-img.svg" className="img-fluid mb-3 mb-lg-0" alt=""/>
-      </div>
+      {/*<div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">*/}
+      {/*  <img src="assets/img/hero-img.svg" className="img-fluid mb-3 mb-lg-0" alt=""/>*/}
+      {/*</div>*/}
 
     </div>
   </div>
