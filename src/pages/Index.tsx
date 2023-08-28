@@ -96,16 +96,16 @@ function Index(){
         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div className="card">
             <div className="card-img">
-              <img src="assets/img/storage-service.jpg" alt="" className="img-fluid"/>
+              <img src="assets/img/avto.jpg" alt="" className="img-fluid"/>
             </div>
-            <h3><a href="service-details.html" className="stretched-link">АВТОМОБИЛЬНЫЕ</a></h3>
+            <h3><a href="service-details.html" className="stretched-link">НАЗЕМНАЯ ДОСТАВКА</a></h3>
             <p>Один из самых удобных и экономичных видов доставки грузов-автомобильные грузоперевозки. Доставка автомобильным транспортом лидирует среди других видов транспортировки</p>
           </div>
         </div>
         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div className="card">
             <div className="card-img">
-              <img src="assets/img/logistics-service.jpg" alt="" className="img-fluid"/>
+              <img src="assets/img/avia.jpg" alt="" className="img-fluid"/>
             </div>
             <h3><a href="service-details.html" className="stretched-link">АВИА ПЕРЕВОЗКИ</a></h3>
             <p>Компания "Ethno Logistics" предоставляет высококачественные услуги "авиаперевозки". Закажите авиаперевозку груза в нашей компании</p>
@@ -115,7 +115,7 @@ function Index(){
         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div className="card">
             <div className="card-img">
-              <img src="assets/img/cargo-service.jpg" alt="" className="img-fluid"/>
+              <img src="assets/img/upakovka.jpg" alt="" className="img-fluid"/>
             </div>
             <h3><a href="service-details.html" className="stretched-link">УПАКОВКА</a></h3>
             <p>Дополнительная упаковка обеспечивает наибольшую сохранность груза, а так же при необходимости мы можем сделать маркировку товара</p>
@@ -126,6 +126,59 @@ function Index(){
     </div>
   </section>
 
+    <section id="pricing" className="pricing">
+        <div className="container aos-init aos-animate" data-aos="fade-up">
+            <div className="section-header">
+                <span>ТАРИФЫ</span>
+                <h2>ТАРИФЫ</h2>
+            </div>
+            
+            <div className="row gy-4">
+                <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div className="pricing-item">
+                        <h3>СТАНДАРТ</h3>
+                        <h4><sup>$</sup>7<span> / кг</span></h4>
+                        <ul>
+                            <li><i className="bi bi-check"></i> 3-5 рабочих дней</li>
+                            <li><i className="bi bi-check"></i> рейс в среду и субботу</li>
+                            <li><i className="bi bi-check"></i> мин. вес к отправке 1кг</li>
+                        </ul>
+                        <a href="/pricing" className="buy-btn">Подробно</a>
+                    </div>
+                </div> 
+
+                <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div className="pricing-item featured">
+                        <h3>ЭКСПРЕСС</h3>
+                        <h4><sup>$</sup>12<span> / кг</span></h4>
+                        <ul>
+                            <li><i className="bi bi-check"></i> 2-4 рабочих дней</li>
+                            <li><i className="bi bi-check"></i> рейс 3-4 раза в неделю</li>
+                            <li><i className="bi bi-check"></i> мин. вес к отправке 2кг</li>
+                        </ul>
+                        <a href="/pricing" className="buy-btn">Подробно</a>
+                    </div>
+                </div> 
+
+                <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div className="pricing-item">
+                        <h3>УЛЬТРА</h3>
+                        <h4><sup>$</sup>36<span> / кг</span></h4>
+                        <ul>
+                            <li><i className="bi bi-check"></i> 36 часов</li>
+                            <li><i className="bi bi-check"></i> рейс 3-4 раза в неделю</li>
+                            <li><i className="bi bi-check"></i> мин. вес 1кг</li>
+                        </ul>
+                        <a href="/pricing" className="buy-btn">Подробно</a>
+                    </div>
+                </div> 
+
+            </div>
+
+        </div>
+    </section>
+    
+    
   {/* <!-- ======= About Us Section ======= --> */}
   <section id="about" className="about pt-0">
     <div className="container" data-aos="fade-up">
@@ -161,7 +214,7 @@ function Index(){
               <i className="bi bi-broadcast"></i>
               <div>
                 <h5>ОПЫТ В СФЕРЕ ЛОГИСТИКИ</h5>
-                <p>Наша компания работает на рынке логистических услуг с 2005 года и зарекомендовала себя как надежный Партнер</p>
+                <p>Наша компания работает на рынке логистических услуг с 2015 года и зарекомендовала себя как надежный Партнер</p>
               </div>
             </li>
           </ul>
