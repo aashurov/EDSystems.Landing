@@ -134,7 +134,7 @@ function Index(){
             </div>
             
             <div className="row gy-4">
-                <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                     <div className="pricing-item">
                         <h3>СТАНДАРТ</h3>
                         <h4><sup>$</sup>7<span> / кг</span></h4>
@@ -147,7 +147,7 @@ function Index(){
                     </div>
                 </div> 
 
-                <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                     <div className="pricing-item featured">
                         <h3>ЭКСПРЕСС</h3>
                         <h4><sup>$</sup>12<span> / кг</span></h4>
@@ -160,7 +160,7 @@ function Index(){
                     </div>
                 </div> 
 
-                <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                     <div className="pricing-item">
                         <h3>УЛЬТРА</h3>
                         <h4><sup>$</sup>36<span> / кг</span></h4>
@@ -171,7 +171,20 @@ function Index(){
                         </ul>
                         <a href="/pricing" className="buy-btn">Подробно</a>
                     </div>
-                </div> 
+                </div>
+
+                <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div className="pricing-item">
+                        <h3>Наземная</h3>
+                        <h4><sup>от $</sup>5<span> / кг</span></h4>
+                        <ul>
+                            <li><i className="bi bi-check"></i> от 10 рабочих дней</li>
+                            <li><i className="bi bi-check"></i> рейс 3-4 раза в неделю</li>
+                            <li><i className="bi bi-check"></i> мин вес от 10кг</li>
+                        </ul>
+                        <a href="/pricing" className="buy-btn">Подробно</a>
+                    </div>
+                </div>
 
             </div>
 
