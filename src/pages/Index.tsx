@@ -141,7 +141,7 @@ function Index(){
                         <ul>
                             <li><i className="bi bi-check"></i> 3-5 рабочих дней</li>
                             <li><i className="bi bi-check"></i> рейс в среду и субботу</li>
-                            <li><i className="bi bi-check"></i> мин. вес к отправке 1кг</li>
+                            <li><i className="bi bi-check"></i> мин. вес к отправке 2кг</li>
                         </ul>
                         <a href="/pricing" className="buy-btn">Подробно</a>
                     </div>
@@ -163,7 +163,7 @@ function Index(){
                 <div className="col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                     <div className="pricing-item">
                         <h3>УЛЬТРА</h3>
-                        <h4><sup>$</sup>36<span> / кг</span></h4>
+                        <h4><sup>$</sup>30<span> / кг</span></h4>
                         <ul>
                             <li><i className="bi bi-check"></i> 36 часов</li>
                             <li><i className="bi bi-check"></i> рейс 3-4 раза в неделю</li>
