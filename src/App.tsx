@@ -11,6 +11,7 @@ import Getaquote from './pages/Getaquote';
 import News from './pages/News';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsCondition from './pages/TermsCondition';
+import Calculate from './pages/Calculate';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/getaquote' element={<Getaquote/>}/>
           <Route path='/privacypolicy' element={<PrivacyPolicy/>}/>
           <Route path='/termscondition' element={<TermsCondition/>}/>
+          <Route path='/calculate' element={<Calculate/>}/>
         </Routes>
       </Router>
       {/* <Index/> */}

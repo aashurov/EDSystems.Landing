@@ -1,7 +1,9 @@
 import React, {Fragment} from "react";
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 
 function Menu() {
+    const location = useLocation();
+    const pathName = location.pathname;
     return (
         <Fragment>
             {/* <!-- ======= Header ======= --> */}
@@ -14,16 +16,17 @@ function Menu() {
                     <nav id="navbar" className="navbar">
                         <ul>
                             <li>
-                                <Link to='/' className="active">Главная</Link>
+                                <Link to='/' className={`${pathName === "/"? "active" : "" }`}>Главная</Link>
                             </li>
                             {/* _b30f320f9cf3e22ad5c70610bb3fd444.ethno.uz. CNAME _e9cb7e7b36783da9c5c52a343ddb1fb7.wmqxbylrnj.acm-validations.aws. */}
 
                             {/*<li><Link to='/about'>О нас</Link></li>*/}
                             {/* <li><Link to='/services'>Услуги</Link></li> */}
-                             <li><Link to='/news'>Новости</Link></li>
-                            <li><Link to='/pricing'>Тарифы</Link></li>
-                            <li><Link to='/contact'>Контакты</Link></li>
-                            <li><Link to='/getaquote'>Оставить заявку</Link></li>
+                             <li><Link to='/news' className={`${pathName === "/news"? "active" : "" }`}>Новости</Link></li>
+                            <li><Link to='/pricing' className={`${pathName === "/pricing"? "active" : "" }`}>Тарифы</Link></li>
+                            <li><Link to='/contact' className={`${pathName === "/contact"? "active" : "" }`}>Контакты</Link></li>
+                            <li><Link to='/getaquote' className={`${pathName === "/getaquote"? "active" : "" }`}>Оставить заявку</Link></li>
+                            <li><Link to='/calculate' className={`${pathName === "/calculate"? "active" : "" }`}>Расчет перевозки</Link></li>
                             {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
