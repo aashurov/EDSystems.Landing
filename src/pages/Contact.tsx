@@ -137,23 +137,23 @@ function Contact(){
                         <div className="p-3">
                             <div className="row mb-2">
                                 <div className="col fw-bold">
-                                    Адрес в Республики Казахстан
+                                    Адрес в Республики Таджикистан.
                                 </div>
                                 <div className="col text-primary text-end">
-                                    г. Алматы
+                                    г. Душанбе
                                 </div>
                             </div>
                             <div className="text-muted">
-                                ул. Тургута Озала 245, почтовый индекс A15T3F1 (050046)
+                                Сино проспект Яккачинарская дом 142/2 офис № 42
                             </div>
                             <div className="text-primary">
-                                <a href="tel:+77073659559">+77073659559</a>
+                                <a href="tel:203099000">203099000</a>
                             </div>
                         </div>
 
                         <div className="mapouter">
                             <div className="gmap_canvas">
-                                <iframe width="100%" height="220" loading="lazy" style={{border:0}} id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.75600825244!2d76.87791769741854!3d43.23557499667354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883690ff8bfcc5f%3A0x88346367bc52522!2z0YPQu9C40YbQsCDQotGD0YDQs9GD0YLQsCDQntC30LDQu9CwIDI0NSwg0JDQu9C80LDRgtGLIDA1MDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1sru!2s!4v1693244062395!5m2!1sru!2s" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0}>
+                                <iframe width="100%" height="220" loading="lazy" style={{border:0}} id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24956.559448003954!2d68.80932326601602!3d38.56672144423586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d184c446f5ef%3A0x28d7c38510da1d02!2zMiwg0YPQuy4g0K_QutC60LAt0KfQuNC90LDRgNGB0LrQsNGPIDE0Miwg0JTRg9GI0LDQvdCx0LUgNzM0MDAwLCDQotCw0LTQttC40LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1693756755709!5m2!1sru!2s" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0}>
                                 </iframe>
                             </div>
                         </div>
