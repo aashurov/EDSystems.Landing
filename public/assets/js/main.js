@@ -1,5 +1,7 @@
 // const { default: axios } = require("axios");
 
+
+
 /**
 * Template Name: Logis - v1.2.0
 * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
@@ -12,17 +14,17 @@ const projects = document.getElementById("projects")
 const support = document.getElementById("support")
 const workers = document.getElementById("workers")
 
-window.onload = function(){
-  axios.get("https://www.roagt.ml/api/Landing/GetStatistics")
-  .then((response)=>{
-    const value = response.data;
-    clients.innerHTML = value.customers
-    projects.innerHTML = value.delivered
-    support.innerHTML = value.onWay
-    workers.innerHTML = value.all
-  })
-  .catch((error)=>console.log(error));
-}
+// window.onload = function(){
+//   axios.get("https://www.roagt.ml/api/Landing/GetStatistics")
+//   .then((response)=>{
+//     const value = response.data;
+//     clients.innerHTML = value.customers
+//     projects.innerHTML = value.delivered
+//     support.innerHTML = value.onWay
+//     workers.innerHTML = value.all
+//   })
+//   .catch((error)=>console.log(error));
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -174,22 +176,22 @@ document.addEventListener('DOMContentLoaded', () => {
  * Submit text 
   **/
 
-const SubmitTextInput = document.getElementById("submit-text");
-let SubmitText = ""
-
-SubmitTextInput.addEventListener("change", (e) =>{
-  SubmitText = e.target.value;
-})
-
-const SubmitButton = document.getElementById("submit-button");
-
-SubmitButton.addEventListener("click", ()=>{
-  if(!SubmitText && SubmitText.length.length != 9){
-    // Error notif must write here
-    alert("Code went wrong!")
-  }else{
-    axios.get(`https://www.roagt.ml/api/Landing/GetParcelDetailsByCode/${SubmitText}`)
-    .then((response)=>console.log(response.data))
-    .catch((error)=>console.log(error))
-  }
-})
+// const SubmitTextInput = document.getElementById("submit-text");
+// let SubmitText = ""
+//
+// SubmitTextInput.addEventListener("change", (e) =>{
+//   SubmitText = e.target.value;
+// })
+//
+// const SubmitButton = document.getElementById("submit-button");
+//
+// SubmitButton.addEventListener("click", ()=>{
+//   if(!SubmitText && SubmitText.length.length != 9){
+//     // Error notif must write here
+//     alert("Code went wrong!")
+//   }else{
+//     axios.get(`https://www.roagt.ml/api/Landing/GetParcelDetailsByCode/${SubmitText}`)
+//     .then((response)=>console.log(response.data))
+//     .catch((error)=>console.log(error))
+//   }
+// })

@@ -115,7 +115,7 @@ function Contact(){
                                 </div>
                             </div>
                             <div className="text-muted">
-                                ул. Тургута Озала 245, почтовый индекс A15T3F1 (050046)
+                                ул. Ислама Каримова 164
                             </div>
                             <div className="text-primary">
                                 <a href="tel:+77073659559">+77073659559</a>

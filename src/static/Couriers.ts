@@ -4,11 +4,7 @@ export const couriers = [
         value: "0",
     },
     {
-        label: "Бери из райцентра",
+        label: "Забрать у клиента (от 3$)",
         value: "1"
-    },
-    {
-        label: "Забрать у клиента",
-        value: "2"
     },
 ]
