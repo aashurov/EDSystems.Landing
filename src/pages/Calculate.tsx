@@ -144,6 +144,85 @@ function Calculate(){
         const chat_id  = -991939853;
         const userInfoText = "Ф.И.О.: " + userInfo.fullName + "\nКонтакт: " + userInfo.phoneNumber;
 
+        if(initialValues.plan.includes("Стандарт"))
+        {
+            initialValues.plan = "Стандарт"
+        }
+        else if(initialValues.plan.includes("Ультра"))
+        {
+            initialValues.plan = "Ультра"
+        }
+        else if(initialValues.plan.includes("Наземная"))
+        {
+            initialValues.plan = "Авто"
+        }
+
+        if(initialValues.firstCountry.includes("Российская"))
+        {
+            initialValues.firstCountry = "Москва"
+        }
+        else  if(initialValues.firstCountry.includes("Узбекистан"))
+        {
+            initialValues.firstCountry = "Ташкент"
+        }
+        else  if(initialValues.firstCountry.includes("Кыргызстан"))
+        {
+            initialValues.firstCountry = "Бишкек"
+        }
+        else  if(initialValues.firstCountry.includes("Казахстан"))
+        {
+            initialValues.firstCountry = "Алматы"
+        }
+        else  if(initialValues.firstCountry.includes("Таджикистан"))
+        {
+            initialValues.firstCountry = "Душанбе"
+        }
+        else  if(initialValues.firstCountry.includes("Турция"))
+        {
+            initialValues.firstCountry = "Стамбул"
+        }
+
+        if(initialValues.secondCountry.includes("Российская"))
+        {
+            initialValues.secondCountry = "Москва"
+        }
+        else  if(initialValues.secondCountry.includes("Узбекистан"))
+        {
+            initialValues.secondCountry = "Ташкент"
+        }
+        else  if(initialValues.secondCountry.includes("Кыргызстан"))
+        {
+            initialValues.secondCountry = "Бишкек"
+        }
+        else  if(initialValues.secondCountry.includes("Казахстан"))
+        {
+            initialValues.secondCountry = "Алматы"
+        }
+        else  if(initialValues.secondCountry.includes("Таджикистан"))
+        {
+            initialValues.secondCountry = "Душанбе"
+        }
+        else  if(initialValues.secondCountry.includes("Турция"))
+        {
+            initialValues.secondCountry = "Стамбул"
+        }
+
+         if(initialValues.courier.includes("Забрать у клиента (от 3$)"))
+        {
+            initialValues.courier = "Забрать у клиента"
+        }
+
+         if(initialValues.delivery.includes("Вывоз из офиса (бесплатно)"))
+        {
+            initialValues.delivery = "Самовывоз"
+        }
+         else  if(initialValues.delivery.includes("Доставка до двери (от 3$)"))
+         {
+             initialValues.delivery = "Доставка до двери"
+         }
+
+
+
         const messageBody =  "Откуда: " + initialValues.firstCountry +
             "\nКуда: " + initialValues.secondCountry +
             "\nВес посылки (кг): " + initialValues.weight +
