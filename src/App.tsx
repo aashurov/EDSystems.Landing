@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import './App.css';
 import Index from './pages/Index';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -30,6 +33,7 @@ function App() {
           <Route path='/calculate' element={<Calculate/>}/>
         </Routes>
       </Router>
+      <ToastContainer />
       {/* <Index/> */}
     </div>
   );
