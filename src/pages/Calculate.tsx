@@ -384,7 +384,9 @@ function Calculate(){
             )}
             <Footer/>
         </Fragment>
-    )
+
+
+            )
 }
 
 export default Calculate;
