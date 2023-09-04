@@ -221,8 +221,6 @@ function Calculate(){
              initialValues.delivery = "Доставка до двери"
          }
 
-
-
         const messageBody =  "Откуда: " + initialValues.firstCountry +
             "\nКуда: " + initialValues.secondCountry +
             "\nВес посылки (кг): " + initialValues.weight +
