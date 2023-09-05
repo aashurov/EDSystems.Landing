@@ -273,7 +273,7 @@ function Calculate(){
                                             <select className="form-select p-2" aria-label="Default select example" onChange={(event: any)=>onChangeFirstCountry(event.target.value)} required>
                                                 {firstCountriesList.map((d:any)=>{
                                                     return (
-                                                        <option value={d.value}>{d.label}</option>
+                                                        <option key={d.value} value={d.value}>{d.label}</option>
                                                     )
                                                 })}
                                             </select>
@@ -284,7 +284,7 @@ function Calculate(){
                                             <select className="form-select p-2" aria-label=".form-select-lg example" onChange={(event: any)=>onChangeSecondCountry(event.target.value)} required>
                                                 {secondCountriesList.map((d:any)=>{
                                                     return (
-                                                        <option value={d.value}>{d.label}</option>
+                                                        <option key={d.value} value={d.value}>{d.label}</option>
                                                     )
                                                 })}
                                             </select>
@@ -295,7 +295,7 @@ function Calculate(){
                                             <select className="form-select p-2" aria-label=".form-select-lg example" onChange={(event)=>onChangeCourier(event.target.value)} required>
                                                 {couriers.map((d:any)=>{
                                                     return (
-                                                        <option value={d.value}>{d.label}</option>
+                                                        <option key={d.value} value={d.value}>{d.label}</option>
                                                     )
                                                 })}
                                             </select>
@@ -306,7 +306,7 @@ function Calculate(){
                                             <select className="form-select p-2" aria-label=".form-select-lg example" onChange={(event)=>onChangeDelivery(event.target.value)}  required>
                                                 {deliveres.map((d:any)=>{
                                                     return (
-                                                        <option value={d.value}>{d.label}</option>
+                                                        <option key={d.value} value={d.value}>{d.label}</option>
                                                     )
                                                 })}
                                             </select>
@@ -319,7 +319,7 @@ function Calculate(){
                                             <select className="form-select p-2" aria-label=".form-select-lg example" onChange={(event)=>onchangeTrafic(event.target.value)} required>
                                                 {trafices.map((d:any)=>{
                                                     return (
-                                                        <option value={d.value}>{d.label}</option>
+                                                        <option key={d.value} value={d.value}>{d.label}</option>
                                                     )
                                                 })}
                                             </select>

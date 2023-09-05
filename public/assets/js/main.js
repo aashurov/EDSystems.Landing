@@ -9,10 +9,10 @@
 * License: https://bootstrapmade.com/license/
 */
 
-const clients = document.getElementById("clients")
-const projects = document.getElementById("projects")
-const support = document.getElementById("support")
-const workers = document.getElementById("workers")
+// const clients = document.getElementById("clients")
+// const projects = document.getElementById("projects")
+// const support = document.getElementById("support")
+// const workers = document.getElementById("workers")
 
 // window.onload = function(){
 //   axios.get("https://www.roagt.ml/api/Landing/GetStatistics")

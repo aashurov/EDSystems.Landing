@@ -1,6 +1,25 @@
 import React, {Fragment} from "react";
 import {Link, useLocation} from 'react-router-dom'
 
+const mobileNavShow = document.querySelector('.mobile-nav-show');
+const mobileNavHide = document.querySelector('.mobile-nav-hide');
+
+const handleClick = () => {
+    document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
+        el.addEventListener('click', function (event) {
+            event.preventDefault();
+            mobileNavToogle();
+            console.log("salomqq")
+        })
+    });
+};
+function mobileNavToogle() {
+    document.querySelector('body')?.classList.toggle('mobile-nav-active');
+    mobileNavShow?.classList.toggle('d-none');
+    mobileNavHide?.classList.toggle('d-none');
+    console.log("salom")
+}
+
 function Menu() {
     const location = useLocation();
     const pathName = location.pathname;
@@ -11,8 +30,8 @@ function Menu() {
             <header id="header" className="header d-flex align-items-center ">
                 <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
                     <Link to='/' className="logo d-flex align-items-center"><h1>Ethno Logistics</h1></Link>
-                    <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-                    <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+                    <i className="mobile-nav-toggle mobile-nav-show bi bi-list" onClick={handleClick}></i>
+                    <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" onClick={handleClick}></i>
                     <nav id="navbar" className="navbar">
                         <ul>
                             <li>
