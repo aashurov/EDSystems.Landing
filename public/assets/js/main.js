@@ -9,10 +9,10 @@
 * License: https://bootstrapmade.com/license/
 */
 
-const clients = document.getElementById("clients")
-const projects = document.getElementById("projects")
-const support = document.getElementById("support")
-const workers = document.getElementById("workers")
+// const clients = document.getElementById("clients")
+// const projects = document.getElementById("projects")
+// const support = document.getElementById("support")
+// const workers = document.getElementById("workers")
 
 // window.onload = function(){
 //   axios.get("https://www.roagt.ml/api/Landing/GetStatistics")
@@ -65,6 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+
+
+
   /**
    * Mobile nav toggle
    */
@@ -75,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('click', function(event) {
       event.preventDefault();
       mobileNavToogle();
+        console.log("salomqq")
     })
   });
 
@@ -82,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavShow.classList.toggle('d-none');
     mobileNavHide.classList.toggle('d-none');
+    console.log("salom")
   }
 
   /**
