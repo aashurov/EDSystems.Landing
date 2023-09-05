@@ -1,76 +1,43 @@
-import React, {Fragment} from "react";
+
+import "./assets/menu.scss";
+
+import React, {Fragment, useEffect, useState} from "react";
 import {Link, useLocation} from 'react-router-dom'
-
-const mobileNavShow = document.querySelector('.mobile-nav-show');
-const mobileNavHide = document.querySelector('.mobile-nav-hide');
-
-const handleClick = () => {
-    document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-        el.addEventListener('click', function (event) {
-            event.preventDefault();
-            mobileNavToogle();
-            console.log("salomqq")
-        })
-    });
-};
-function mobileNavToogle() {
-    document.querySelector('body')?.classList.toggle('mobile-nav-active');
-    mobileNavShow?.classList.toggle('d-none');
-    mobileNavHide?.classList.toggle('d-none');
-    console.log("salom")
-}
+import { CheckMobileUtils } from "../utils/CheckMobileUtils";
 
 function Menu() {
     const location = useLocation();
     const pathName = location.pathname;
+
+    const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+    const isMobile = CheckMobileUtils();
+
+    console.log(isMobile)
+
     return (
         <Fragment>
-            {/* <!-- ======= Header ======= --> */}
-            {/*fixed-top*/}
-            <header id="header" className="header d-flex align-items-center ">
-                <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-                    <Link to='/' className="logo d-flex align-items-center"><h1>Ethno Logistics</h1></Link>
-                    <i className="mobile-nav-toggle mobile-nav-show bi bi-list" onClick={handleClick}></i>
-                    <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" onClick={handleClick}></i>
-                    <nav id="navbar" className="navbar">
-                        <ul>
-                            <li>
-                                <Link to='/' className={`${pathName === "/"? "active" : "" }`}>Главная</Link>
-                            </li>
-                            {/* _b30f320f9cf3e22ad5c70610bb3fd444.ethno.uz. CNAME _e9cb7e7b36783da9c5c52a343ddb1fb7.wmqxbylrnj.acm-validations.aws. */}
 
-                            {/*<li><Link to='/about'>О нас</Link></li>*/}
-                            {/* <li><Link to='/services'>Услуги</Link></li> */}
-                             <li><Link to='/news' className={`${pathName === "/news"? "active" : "" }`}>Новости</Link></li>
+            <header id="header" className="header d-flex align-items-center ">
+                <div className="container-fluid container-xl d-flex align-items-start justify-content-between">
+                    <Link to='/' className="logo d-flex align-items-center"><h1>Ethno Logistics</h1></Link>
+                    <i className={`mobile-nav-show bi bi-list ${openMobileMenu && "d-none"}`} onClick={()=>setOpenMobileMenu(true)}></i>
+                    <i className={`mobile-nav-hide bi bi-x ${!openMobileMenu && "d-none"} `} onClick={()=>setOpenMobileMenu(false)}></i>
+                    <nav id="navbar" className="navbar" style={{
+                        right: isMobile && !openMobileMenu? "-100%" : "0",
+                    }}>
+                        <ul className="">
+                            <li><Link to='/' className={`${pathName === "/"? "active" : "" }`}>Главная</Link></li>
+                            <li><Link to='/news' className={`${pathName === "/news"? "active" : "" }`}>Новости</Link></li>
                             <li><Link to='/pricing' className={`${pathName === "/pricing"? "active" : "" }`}>Тарифы</Link></li>
                             <li><Link to='/contact' className={`${pathName === "/contact"? "active" : "" }`}>Контакты</Link></li>
                             <li><Link to='/getaquote' className={`${pathName === "/getaquote"? "active" : "" }`}>Оставить заявку</Link></li>
                             <li><Link to='/calculate' className={`${pathName === "/calculate"? "active" : "" }`}>Расчет перевозки</Link></li>
-                            {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li className="dropdown"><a href="#"><span>Deep Drop Down</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> */}
                         </ul>
                     </nav>
-                    {/* <!-- .navbar --> */}
-
                 </div>
             </header>
-            {/* <!-- End Header --> */}
-            {/* <!-- End Header --> */}
+
         </Fragment>
     )
 }
