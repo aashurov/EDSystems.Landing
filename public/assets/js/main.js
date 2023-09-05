@@ -65,9 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
-
-
-
   /**
    * Mobile nav toggle
    */
@@ -78,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('click', function(event) {
       event.preventDefault();
       mobileNavToogle();
-        console.log("salomqq")
     })
   });
 
@@ -86,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavShow.classList.toggle('d-none');
     mobileNavHide.classList.toggle('d-none');
-    console.log("salom")
   }
 
   /**
