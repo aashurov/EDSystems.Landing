@@ -15,10 +15,10 @@ import News from './pages/News';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsCondition from './pages/TermsCondition';
 import Calculate from './pages/Calculate';
-
 function App() {
   return (
     <div className="App">
+
       <Router>
         <Routes>
           <Route path='/' element={<Index/>} />
