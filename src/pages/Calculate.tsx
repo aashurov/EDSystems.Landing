@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useState } from "react";
+import {Fragment, useCallback, useEffect, useState} from "react";
 import { toast } from 'react-toastify';
 
 import { countries } from "../static/Countries";
@@ -39,6 +39,10 @@ function Calculate(){
         plan: "",
         weight: "",
     });
+    const topof = useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
 
     const navigate = useNavigate();
 
@@ -106,7 +110,7 @@ function Calculate(){
 
 
     const calc = useCallback(()=>{
-
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         const _d = costInfoList.filter((d)=>d.fromBranch === initialValues.firstCountry && d.toBranch === initialValues.secondCountry && d.planName === initialValues.plan)[0];
         setQuestion(true);
         if(_d?.commonCost === 0){
