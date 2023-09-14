@@ -1,0 +1,28 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      with:
+           username: ${{ secrets.FTP_USERNAME }}
+           server: ${{ secrets.FTP_IP_ADDRESS }}
+           port: ${{ secrets.FTP_PORT }}
+           sftp_only: true
+           password: ${{ secrets.FTP_PASSWORD }}
+           local_path: './*'
+           remote_path: './ethnologistics.com'
