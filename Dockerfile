@@ -6,9 +6,9 @@ COPY package.json .
 
 RUN npm install
 
-CPOY . .
+COPY . .
 
-ESPOSE 3000
+EXPOSE 3000
 
 CMD ["npm", "start"]
 
