@@ -33,7 +33,7 @@ function Menu() {
                             <li><Link to='/contact' className={`${pathName === "/contact"? "active" : "" }`}>Контакты</Link></li>
                             <li><Link to='/getaquote' className={`${pathName === "/getaquote"? "active" : "" }`}>Оставить заявку</Link></li>
                             <li><Link to='/calculate' className={`${pathName === "/calculate"? "active" : "" }`}>Расчет перевозки</Link></li>
-                            <li><a className="get-a-quote" href="old.ethnologistics.com/Identity/Account/Login">Вход</a></li>
+                            <li><a className="get-a-quote" href="http://old.ethnologistics.com/Identity/Account/Login">Вход</a></li>
                         </ul>
                     </nav>
                 </div>
