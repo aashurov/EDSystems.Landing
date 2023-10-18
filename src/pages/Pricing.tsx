@@ -51,8 +51,8 @@ function Pricing(){
                                <td colSpan={4} className="align-middle">Тарифы и сроки</td>
                            </tr>
                            <tr>
-                               <td className="align-middle, center">СТАНДАРТ<br/>3-5 рабочих дней<br/>(по паспорту получателя)</td>
-                               <td className="align-middle">ЭКСПРЕСС<br/>2-4 рабочих дней</td>
+                               <td className="align-middle, center">СТАНДАРТ<br/>5-7 рабочих дней<br/>(по паспорту получателя)</td>
+                               <td className="align-middle">ЭКСПРЕСС<br/>3-5 рабочих дней</td>
                                <td className="align-middle">УЛЬТРА<br/>36 часов<br/>(мин вес 1кг)</td>
                                <td className="align-middle">АВТО<br/>от 10 рабочих дней<br/>мин вес от 10кг</td>
                            </tr>
