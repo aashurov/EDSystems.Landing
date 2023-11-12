@@ -3,9 +3,9 @@
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "dev-v2" ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "dev-v2" ]
 
 name: 🚀 Deploy website on push
 jobs:
@@ -25,4 +25,4 @@ jobs:
            sftp_only: true
            password: ${{ secrets.FTP_PASSWORD }}
            local_path: './*'
-           remote_path: './ethnologistics.com'
+           remote_path: './ethno.uz'
