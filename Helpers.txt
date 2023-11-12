@@ -7,7 +7,7 @@
 	git branch -M main
 	git remote add origin https://github.com/aashurov/EDSystems.Landing.git
 	git push -u origin main
-	//This line for ssh
+	//This line for ssh   
 	git push git@github.com:aashurov/EDSystems.Landing.git
 	//if must to relogin to github
 	git remote set-url origin git@github.com:aashurov/EDSystems.Landing.git
