@@ -252,8 +252,6 @@ function Calculate(){
             { formType === FormTypes.Calcul && (
                 <section id="get-a-quote" className="get-a-quote">
                     <div className="container" data-aos="fade-up">
-
-
                         {question && (
                             <div className="row bg-success mb-2 py-2 m-0">
                                 <div className="col-8">
@@ -387,10 +385,7 @@ function Calculate(){
                 </section>
             )}
             <Footer/>
-        </Fragment>
-
-
-            )
+        </Fragment>)
 }
 
 export default Calculate;

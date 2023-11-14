@@ -1,6 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
-
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import './App.css';
@@ -15,6 +12,7 @@ import News from './pages/News';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsCondition from './pages/TermsCondition';
 import Calculate from './pages/Calculate';
+import SearchingTable from './pages/SearchingTable';
 function App() {
   return (
     <div className="App">
@@ -22,6 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Index/>} />
+          <Route path='/searching' element={<SearchingTable/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/news' element={<News/>}/>
           <Route path='/pricing' element={<Pricing/>}/>

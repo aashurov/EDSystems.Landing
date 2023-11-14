@@ -1,19 +1,13 @@
 
-import "./assets/menu.scss";
-
-import React, {Fragment, useEffect, useState} from "react";
+import React, {Fragment, useState} from "react";
 import {Link, useLocation} from 'react-router-dom'
 import { CheckMobileUtils } from "../utils/CheckMobileUtils";
 
 function Menu() {
     const location = useLocation();
     const pathName = location.pathname;
-
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
-
     const isMobile = CheckMobileUtils();
-
-    console.log(isMobile)
 
     return (
         <Fragment>
@@ -28,6 +22,7 @@ function Menu() {
                     }}>
                         <ul className="">
                             <li><Link to='/' className={`${pathName === "/"? "active" : "" }`}>Главная</Link></li>
+                            <li><Link to='/searching' className={`${pathName === "/searching"? "active" : "" }`}>Поиск</Link></li>
                             <li><Link to='/news' className={`${pathName === "/news"? "active" : "" }`}>Новости</Link></li>
                             <li><Link to='/pricing' className={`${pathName === "/pricing"? "active" : "" }`}>Тарифы</Link></li>
                             <li><Link to='/contact' className={`${pathName === "/contact"? "active" : "" }`}>Контакты</Link></li>
