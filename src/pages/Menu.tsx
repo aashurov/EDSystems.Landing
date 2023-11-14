@@ -28,7 +28,7 @@ function Menu() {
                             <li><Link to='/contact' className={`${pathName === "/contact"? "active" : "" }`}>Контакты</Link></li>
                             <li><Link to='/getaquote' className={`${pathName === "/getaquote"? "active" : "" }`}>Оставить заявку</Link></li>
                             <li><Link to='/calculate' className={`${pathName === "/calculate"? "active" : "" }`}>Расчет перевозки</Link></li>
-                            <li><a className="get-a-quote" href="https://my.ethno.uz">Вход</a></li>
+                            <li><a className="get-a-quote" href="https://my-dev.ethno.uz/Identity/Account/Login">Вход</a></li>
                         </ul>
                     </nav>
                 </div>
