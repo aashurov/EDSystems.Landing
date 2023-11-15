@@ -26,7 +26,7 @@ export default function SearchingTable(){
     const searching = useCallback(()=>{
         setTableType("")
         setLoading(true);
-        axios.get(`https://my-dev.ethno.uz/search/${searchValue}`)
+        axios.get(`https://my.ethno.uz/search/${searchValue}`)
             .then((response)=>{
                 if(response.data.id !== 0){
                     setResponse(response.data)
