@@ -20,7 +20,7 @@ jobs:
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
            username: root
-           server: 161.97.126.62
+           server: 38.242.218.3
            port: 22
            sftp_only: true
            password: Qwertyruru2022
